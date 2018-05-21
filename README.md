@@ -1,2 +1,2 @@
-## Video App
-# Buscador de videos Youtube
+# Video App
+## Buscador de videos en Youtube
