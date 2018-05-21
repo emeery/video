@@ -6,6 +6,7 @@ const VideoLista = (props) => {
         return <VideoListaItem
             key={i}
             video={video}
+            seleccionaVideo={props.seleccionaVideo}
         />
     })
     return ( <ul>{videoItem}</ul> )
