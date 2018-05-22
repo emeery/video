@@ -13,10 +13,10 @@ class AppVideos extends React.Component {
             videos: [],
             videoSeleccion: null
         }
-        
+        this.unaBusqueda('messi');
     }
-    componentDidMount = () => {
-        YTSearch({key:API_KEY, term: 'messi'}, (videos)=>{
+    unaBusqueda = (term) => {
+        YTSearch({key:API_KEY, term: term}, (videos)=>{
             this.setState({ 
                 videos: videos,
                 videoSeleccion: videos[0]
@@ -33,9 +33,9 @@ class AppVideos extends React.Component {
             <div>
                 <Cabecera
                 titulo='Videos'
-                subtitulo='Buscador en YouTube '
+                subtitulo='Buscador en YouTube'
                 />
-                <Forma/>
+                <Forma FormaCambio={ term => this.unaBusqueda(term)}/>
                 <VideoDetalle
                 video={this.state.videoSeleccion}
                 />

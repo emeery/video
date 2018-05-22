@@ -1,12 +1,27 @@
 import React from 'react';
 
-const Forma = () => {
-    return(<div className='barra-buscadora'>
+class Forma extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {term:'' }
+    }
+    enEntradaCambio = (term) => {
+        this.setState({ term });
+        this.props.FormaCambio(term);
+    }
+    render() { 
+        return (
+        <div className='barra-buscadora'>
             <center>
             <input
+            value={this.state.term}
+            onChange={e => this.enEntradaCambio(e.target.value)}
             placeholder='busca un video'
             />
             </center>
-        </div>);
+        </div> 
+        )
+    }
 }
-export default Forma
+ 
+export default Forma;
