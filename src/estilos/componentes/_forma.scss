@@ -1,0 +1,15 @@
+.barra-buscadora {
+    margin: 20px;
+}
+.barra-buscadora input {
+    
+    width: 70%;
+}
+.barra-buscadora input::placeholder {
+    color:  #566573;
+    font-family: $anton;
+}
+.barra-buscadora input:focus {
+    color: #212f3d;
+    font-family: $anton;
+}

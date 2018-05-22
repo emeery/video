@@ -7,6 +7,7 @@ const VideoLista = (props) => {
             key={i}
             video={video}
             seleccionaVideo={props.seleccionaVideo}
+            scrollToTop={props.scrollToTop}
         />
     })
     return ( <ul>{videoItem}</ul> )
