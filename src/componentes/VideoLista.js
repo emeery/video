@@ -7,10 +7,11 @@ const VideoLista = (props) => {
             key={i}
             video={video}
             seleccionaVideo={props.seleccionaVideo}
-            scrollToTop={props.scrollToTop}
         />
     })
-    return ( <ul>{videoItem}</ul> )
+    return ( <div
+            className='video-lista'
+        >{videoItem}</div> )
 }
  
 export default VideoLista;

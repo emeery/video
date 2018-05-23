@@ -7,7 +7,7 @@ class Forma extends React.Component {
     }
     enEntradaCambio = (term) => {
         this.setState({ term });
-        this.props.FormaCambio(term);
+        this.props.enFormaCambio(term);
     }
     render() { 
         return (
@@ -15,7 +15,7 @@ class Forma extends React.Component {
             <center>
             <input
             value={this.state.term}
-            onChange={e => this.enEntradaCambio(e.target.value)}
+            onChange={ e => this.enEntradaCambio(e.target.value)}
             placeholder='busca un video'
             />
             </center>

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const VideoDetalle = ({ video }) => {
+const VideoEnGrande = ({ video }) => {
     if(!video) {
         return <div>Cargando...</div>
     }
@@ -10,6 +10,7 @@ const VideoDetalle = ({ video }) => {
     return (
         <div className='video-detalle'>
             <div className='embed-responsive embed-responsive-16by9'>
+                
                 <iframe
                 className='embed-responsive-item'
                 src={url}
@@ -22,4 +23,4 @@ const VideoDetalle = ({ video }) => {
     );
 }
  
-export default VideoDetalle;
+export default VideoEnGrande;

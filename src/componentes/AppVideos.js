@@ -1,9 +1,10 @@
 import React from 'react';
-import YTSearch  from 'youtube-api-search';
-import Forma from '../componentes/Forma';
-import VideoLista from '../componentes/VideoLista';
-import VideoDetalle from '../componentes/VideoDetalle';
-import Cabecera from '../componentes/Cabecera'
+import YTSearch from 'youtube-api-search';
+import _ from 'lodash';
+import Forma from './Forma';
+import VideoLista from './VideoLista';
+import Cabecera from './Cabecera'
+import VideoEnGrande from './VideoEnGrande';
 
 const API_KEY = 'AIzaSyBrovGRv5KkhekeTb6TmLbWfNqKbpTAmWU';
 class AppVideos extends React.Component {
@@ -29,14 +30,19 @@ class AppVideos extends React.Component {
     }
 
     render() { 
+        const videoBusqueda = _.debounce((term)=>{
+            this.unaBusqueda(term)
+        }, 300);
         return (
             <div>
                 <Cabecera
                 titulo='Videos'
                 subtitulo='Buscador en YouTube'
                 />
-                <Forma FormaCambio={ term => this.unaBusqueda(term)}/>
-                <VideoDetalle
+                <Forma 
+                enFormaCambio={videoBusqueda}
+                />
+                <VideoEnGrande
                 video={this.state.videoSeleccion}
                 />
                 <VideoLista

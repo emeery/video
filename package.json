@@ -29,6 +29,7 @@
     "file-loader": "^1.1.11",
     "firebase": "^4.13.1",
     "live-server": "^1.2.0",
+    "lodash": "^4.17.10",
     "materialize": "^1.0.0",
     "mdbootstrap": "^4.5.1",
     "node-sass": "^4.7.2",

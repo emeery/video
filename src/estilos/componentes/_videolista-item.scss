@@ -1,8 +1,10 @@
 
 .row .col.s12 {
   background-color: #5d6d7e;
+  margin-top: -20px;
 }
-.card {
+.card { 
+  margin-top: 0%;
   background-color: #212f3c;
   cursor: pointer;
 }
@@ -11,9 +13,11 @@
   color: lightcyan;
   font-size: 2em;
 }
+
 .card p {
-  color: whitesmoke;
-  font-family: $allan;
+  color: lightyellow;
+  font-family: $anton;
+  font-size: 1.5rem;
 }
 .contenedor-video {
   background-color:#283747; 
@@ -22,7 +26,6 @@ iframe {
   height: 300px;
   width: 500px;
 }
-
 .card:hover {
   background-color: #283747;
 }
@@ -46,27 +49,27 @@ iframe {
 
 
 
-// /* Create two unequal columns that floats next to each other */
-// .column {
-//     float: left;
-//     padding: 10px;
-//     height: 300px; /* Should be removed. Only for demonstration */
-// }
+// // /* Create two unequal columns that floats next to each other */
+// // .column {
+// //     float: left;
+// //     padding: 10px;
+// //     height: 300px; /* Should be removed. Only for demonstration */
+// // }
 
-// .left {
-//   width: 25%;
-// }
+// // .left {
+// //   width: 25%;
+// // }
 
-// .right {
-//   overflow:auto;
-//   width: 20%;
-//   background-color:#34495e;
-//   h2 {color: #ecf0f1; }
-// }
+// // .right {
+// //   overflow:auto;
+// //   width: 20%;
+// //   background-color:#34495e;
+// //   h2 {color: #ecf0f1; }
+// // }
 
-// /* Clear floats after the columns */
-// .row:after {
-//     content: "";
-//     display: table;
-//     clear: both;
-// }
+// // /* Clear floats after the columns */
+// // .row:after {
+// //     content: "";
+// //     display: table;
+// //     clear: both;
+// // }
