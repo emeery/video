@@ -14,6 +14,7 @@ const VideoListaItem = ({ video, seleccionaVideo, scrollToTop }) => {
     className="row">
         <div className="col s12 m7">
             <div className="card">
+                
                 <div className="card-content">
                     <span 
                     className="card__title"

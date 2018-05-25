@@ -9,9 +9,17 @@ const VideoLista = (props) => {
             seleccionaVideo={props.seleccionaVideo}
         />
     })
-    return ( <div
-            className='video-lista'
-        >{videoItem}</div> )
+    return (<div
+        className='video-lista'
+        >
+        <h2>selecciona un video de la lista</h2>
+        <div
+            
+        >
+        {videoItem}</div>
+        </div>
+    
+    )
 }
  
 export default VideoLista;

@@ -14,7 +14,7 @@ class AppVideos extends React.Component {
             videos: [],
             videoSeleccion: null
         }
-        this.unaBusqueda('messi');
+        this.unaBusqueda('a sky of full stars');
     }
     unaBusqueda = (term) => {
         YTSearch({key:API_KEY, term: term}, (videos)=>{
